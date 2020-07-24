@@ -20,6 +20,10 @@ The following commands could be used to identify potential bottlenecks in i/o de
 
 * iostat (screenshot #4).
 
+* Alternative to command free - to know how much memory is available (screenshot #11):
+```
+sysctl -a | awk '/hw./' && '/mem/'
+```
 Java monitoring utilities:
 
 * jcmd (screenshot #5, #6).
